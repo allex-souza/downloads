@@ -294,35 +294,7 @@
 	</div>
 
 </body>
-<script>
-function share(){
-if (navigator.share !== undefined) {
-navigator.share({
-	title: 'infoBR GO - Alex Souza',
-	text: 'Assistência técnica em informática | Goiânia-GO',
-	url: 'https://infobr-go.com/',
-})
-.then(() => document.getElementById('asideShare').style.display = 'none')
-.then(() => document.getElementById('contrashare').style.display = 'none')
-.catch((error) => console.log('Error sharing', error));
-}
-}
-setTimeout(myShare, 8500)
-function myShare() {
-shareMy = document.getElementById("asideShare")
-shareMy.style.display = 'block'
-shareMyb = document.getElementById('contrashare')
-shareMyb.style.display = 'block'
-}
 
-function notshare() {
-closeshare = document.getElementById('asideShare')
-closeshare.style.display = 'none'
-shareMyb = document.getElementById('contrashare')
-shareMyb.style.display = 'none'
-}
-
-</script>
 </html>
 
 
